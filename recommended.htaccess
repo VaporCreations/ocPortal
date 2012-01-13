@@ -129,7 +129,7 @@ RewriteRule .* - [L]
 RewriteCond %{ENV:REDIRECT_STATUS} 200
 RewriteRule .* - [L]
 
-#Any issues or concerns commit a line out to maybe gain ideas
+#Any issues or concerns you can cut everything of aybe gain some ideas
 RewriteRule ^zap/(j|c)/([a-z]+)-([0-9]+)\.(js|css)$ /zap/$1/$2.$4 [L]
 </IfModule>
 
