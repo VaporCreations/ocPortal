@@ -106,7 +106,7 @@ RewriteRule ^([^/\&\?]+)\.htm(\?.*)?$ index.php\?page=$1&$2 [L,QSA]
 #The following should not cause issues and bring something positive
 RewriteCond %{HTTP_HOST} !^ocportal.com [NC]
           	
-#Redirect down to to a single domain w/no sub doamins	
+#Redirect down to to a single domain and more with the following	
 RewriteCond %{HTTP_HOST} !^$
 RewriteRule ^/?(.*) http://ocportal.com/$1 [R=301,L,R,NE]
 
