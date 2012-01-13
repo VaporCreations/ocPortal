@@ -103,7 +103,7 @@ RewriteRule ^([^/\&\?]+)/([^/\&\?]*)/([^\&\?]*)\.htm(\?.*)?$ index.php\?page=$1&
 RewriteRule ^([^/\&\?]+)/([^/\&\?]*)\.htm(\?.*)?$ index.php\?page=$1&type=$2&$3 [L,QSA]
 RewriteRule ^([^/\&\?]+)\.htm(\?.*)?$ index.php\?page=$1&$2 [L,QSA]
 
-#The following should not cause issues and bring something positive
+#The following was added and is not automatically configured but IMO does pretty good for SEO
 RewriteCond %{HTTP_HOST} !^ocportal.com [NC]
           	
 #Redirect down to to a single domain and more with the following	
